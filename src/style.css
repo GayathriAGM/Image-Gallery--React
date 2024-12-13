@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #E8E6E7;
+  color: #E4145F;
+}
+.image-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  margin-top: 50pxc;
+}
+.gallery-head{
+  text-align: center; 
+  margin:50px; 
+  font-weight: bold;
+   font-size: 25px;
+}
+.dogimage{
+  width:200px;
+  height:200px;
+}
+
+.gallery-box:hover{
+  transform: scale(1.5);
+
+}
+.gallery-box{
+
+  max-width: 200px;
+  border: 1px solid gray;
+  padding: 6px;
+  margin-left:80px;
+  margin-bottom: 40px;
+  transition: transform .2s;
+}
+
+@media screen and (max-width:768px) {
+  *{
+    font-size: 14px;
+  }
+  .image-container{
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .gallery-box{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    max-width: fit-content;
+  }
+  .dogimage{
+    width: 100px;
+    height: 100px;
+  }
+  
+}
